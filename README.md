@@ -39,27 +39,27 @@ API ключ не требуется - PokeAPI является полность
 
 Чеклист
 Обязательное:
- 3 экрана: List, Detail (с ID в route), Favourites
- UiState (Loading, Success, Error, Empty)
- ViewModel + viewModelScope
- Stateless UI (state + onEvent)
- Repository между ViewModel и Retrofit
- Suspend функции для сетевых запросов
- Все UI состояния реализованы
- Избранное (add/remove)
- Избранное сохраняется при повороте экрана
- Compose + Material3
- Navigation Compose
- Retrofit + kotlinx.serialization
- Debounce поиска (Job + delay 300ms)
+1. 3 экрана: List, Detail (с ID в route), Favourites
+2. UiState (Loading, Success, Error, Empty)
+3. ViewModel + viewModelScope
+4. Stateless UI (state + onEvent)
+5. Repository между ViewModel и Retrofit
+6. Suspend функции для сетевых запросов
+7. Все UI состояния реализованы
+8. Избранное (add/remove)
+9. Избранное сохраняется при повороте экрана
+10. Compose + Material3
+11. Navigation Compose
+12. Retrofit + kotlinx.serialization
+13. Debounce поиска (Job + delay 300ms)
 
 Бонусы:
- Экран Favourites как отдельный route
- Кнопка Refresh
- Кэш результата в памяти (Repository)
- Логирование запросов (OkHttp logging interceptor)
+1. Экран Favourites как отдельный route
+2. Кнопка Refresh
+3. Кэш результата в памяти (Repository)
+4. Логирование запросов (OkHttp logging interceptor)
 
 Примечания:
-Для работы приложения требуется интернет-соединение
-При первом запуске приложение загрузит список первых 151 покемона (первое поколение)
-Все запросы логируются в Logcat (тег: OkHttp)
+1. Для работы приложения требуется интернет-соединение
+2. При первом запуске приложение загрузит список первых 151 покемона (первое поколение)
+3. Все запросы логируются в Logcat (тег: OkHttp)
